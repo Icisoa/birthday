@@ -7,7 +7,7 @@ interface pages {
 }
 
 function ExitComponent({ setPage }: pages) {
-    const sentence = '🎉 축 하 합 니 다 🎉 🎊 탈 출 입 니 다 🎊'
+    const sentence = '🎉 축 하 합 니 다 🎉 🎊 정 답 입 니 다 🎊'
     const texts = Array.from(sentence)
 
     const duration = 5 * 1000;
