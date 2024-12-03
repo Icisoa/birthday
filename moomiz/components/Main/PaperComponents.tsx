@@ -4,8 +4,8 @@ import Image from "next/image"
 import heart from "@/public/heart.png"
 import ballon from "@/public/ballon.png"
 import gift from "@/public/gift.png"
-import DDANG from "@/public/DDANG.jpg"
-import Jungsu from "@/public/jungsu.jpg"
+import geojedo from "@/public/geojedo.jpg"
+import choonsik from "@/public/choonsik.jpg"
 import Kumoh from "@/public/photo.jpg"
 import Modal from './Modal'
 import confetti from 'canvas-confetti'
@@ -13,7 +13,7 @@ import confetti from 'canvas-confetti'
 
 function PaperComponents() {
     const birthdayMsg = '안녕하심까 고양이씨… 권주임 권작가 아기새 어쩌구… 입니다. 퀴즈 풀 때 이게 뭔가 싶었나여? 제가 개발자 친구와 지피티의 조력을 통해 만들어낸 페이지입니다. 솔직히 퀴즈 풀때 이거 내가 어케앎? 하면서 푼거 있다 없다? 맨 앞으로 돌아가서 솔직히 열받았다 아니다? 정답보고 살짝 어리둥절하길 원했는데 어떨지 모르겠네여 ㅎ.ㅎ. 근데 질문 만들기 솔직히 힘들었음. 나 아직 김영우 그렇게 까진 잘 모르나바여… 더 많이 알려줘라… 무튼 생일날 못 만날 수도 있을 것 같아서 이거 만들어주면 그래도 좋을 것 같아가지고 하려고 했는데 다행히 만나게 되었네여 넘신난당. 생일 제가 젤 먼저 그리고 제일 축하함 진짜임 ~~~ 👽 매일같이 보다가 못보니까 넘 힘드네예… 이것도 몇시간 안남았다 ! 어쩔 수 없이 한정된 시간이지만 알차게 놀아봐여 빨리 다 나아서 놀이공원도 가고 ! 소고기도 묵고 ! 합시다. 생일축하해🐈'
-    const ddangMsg = '삼각대들고 또 사진찍으러 가자구. 인생네컷도 같이 찍어줘라!'
+    const geojeMsg = '삼각대들고 또 사진찍으러 가자구. 인생네컷도 같이 찍어줘라!'
     const introMsg = '귀여운 춘식이와 김춘식이'
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -63,15 +63,12 @@ function PaperComponents() {
         switch (img) {
             case 'heart':
                 setMsg(introMsg)
-                setName('오늘의 주인공')
                 break
             case 'ballon':
-                setMsg(ddangMsg)
-                setName('땡이🐾')
+                setMsg(geojeMsg)
                 break
             case 'gift':
                 setMsg(birthdayMsg)
-                setName('민지')
                 break
 
         }
@@ -86,15 +83,6 @@ function PaperComponents() {
             width={240}
             height={234}
             onClick={() => msgHandler('heart')}
-        />
-        {/* <Image
-            className='star'
-            src={star}
-            alt='별'
-            width={240}
-            height={234}
-            onClick={() => msgHandler('star')}
-        /> */}
         <Image
             className='ballon'
             src={ballon}
@@ -104,14 +92,6 @@ function PaperComponents() {
             onClick={() => msgHandler('ballon')}
         />
         <Title>Happy birthday<br/> to <br/>🎂YeongWoo🎂</Title>
-        {/* <Image
-            className='cloud'
-            src={cloud}
-            alt='구름'
-            width={240}
-            height={234}
-            onClick={() => msgHandler('cloud')}
-        /> */}
         <Image
             className='gift'
             src={gift}
@@ -120,14 +100,6 @@ function PaperComponents() {
             height={234}
             onClick={() => msgHandler('gift')}
         />
-        {/* <Image
-            className='clover'
-            src={clover}
-            alt='클로버'
-            width={240}
-            height={234}
-            onClick={() => msgHandler('clover')}
-        /> */}
     </Wrapper>
     )
 }
