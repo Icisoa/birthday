@@ -95,7 +95,7 @@ function PaperComponents() {
             className='ballon'
             src={ballon}
             alt='cat'
-            width={340}
+            width={270}
             height={320}
             onClick={() => msgHandler('ballon')}
         />
@@ -104,7 +104,7 @@ function PaperComponents() {
             className='gift'
             src={gift}
             alt='bread'
-            width={200}
+            width={240}
             height={234}
             onClick={() => msgHandler('gift')}
         />
