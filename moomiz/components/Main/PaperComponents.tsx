@@ -63,12 +63,15 @@ function PaperComponents() {
         switch (img) {
             case 'heart':
                 setMsg(introMsg)
+                                setName('오늘의 주인공')
                 break
             case 'ballon':
                 setMsg(geojeMsg)
+                                setName('땡이🐾')
                 break
             case 'gift':
                 setMsg(birthdayMsg)
+                setName('민지')
                 break
 
         }
