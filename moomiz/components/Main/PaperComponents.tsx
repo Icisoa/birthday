@@ -92,7 +92,7 @@ function PaperComponents() {
             onClick={() => msgHandler('heart')}
         <Image
             className='ballon'
-            src={cat}
+            src={ballon}
             alt='cat'
             width={340}
             height={450}
@@ -101,7 +101,7 @@ function PaperComponents() {
         <Title>Happy birthday<br/> to <br/>🎂YeongWoo🎂</Title>
         <Image
             className='gift'
-            src={bread}
+            src={gift}
             alt='bread'
             width={240}
             height={234}
