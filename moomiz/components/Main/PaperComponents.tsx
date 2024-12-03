@@ -90,6 +90,7 @@ function PaperComponents() {
             width={240}
             height={234}
             onClick={() => msgHandler('heart')}
+            />
         <Image
             className='ballon'
             src={ballon}
