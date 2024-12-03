@@ -9,23 +9,23 @@ import PaperComponents from "./PaperComponents";
 function LogoComponent() {
   const [page, setPage] = useState<number>(0);
   const question = [
-    "정수가 가보지 않은 나라는?",
-    "처음 빌려줬던 책 이름은?",
-    "정수네 집 막내 이름은?",
-    "한라산 등반에 성공했던 날짜는?",
-    "파주 만두 칼국수 맛집 이름은? ",
-    "21년도 6월에 다니던 회사 이름은?",
-    "나랑 여행 안 가본 지역은?",
+    "ㄱㅇㅇ의 최애 동물은?",
+    "나한테 빌려줬던 책 이름은?",
+    "ㄱㅇㅇ의 최애 할맥 메뉴",
+    "ㄱㅇㅇ의 뜻으로 가장 알맞은 것을 고르시오",
+    "나와 함께 간 오유미당에서 영우가 먹은 메뉴는?",
+    "제주도에서 영우가 가장 맛있게 먹은 음식은?",
+    "본인의 가장 매력적인점을 고르자면?",
   ];
 
   const answer = [
-    "일본",
-    "다시, 나는 희망의 증거가 되고 싶다",
-    "땡이",
-    "8월 30일",
-    "밀밭식당",
-    "INVENIA",
-    "부산",
+    "고양이",
+    "인간실격",
+    "버갈감",
+    "귀여워",
+    "마라쌀국수",
+    "열무국수",
+    "깜찍함",
   ];
 
   // 배경 색상을 계산하는 함수
@@ -43,7 +43,7 @@ function LogoComponent() {
       {page == 0 && (
         <>
           <TitleContainer>
-            <Title className="Endeavoring">방탈출 게임🏃‍♀️‍➡️</Title>
+            <Title className="Endeavoring">🎂생일 퀴즈쇼</Title>
           </TitleContainer>
           <Btn onClick={() => setPage(1)}>start</Btn>
         </>
