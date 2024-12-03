@@ -43,7 +43,7 @@ function LogoComponent() {
       {page == 0 && (
         <>
           <TitleContainer>
-            <Title className="Endeavoring">방탈출 게임🏃‍♀️‍➡️</Title>
+            <Title className="Endeavoring">🎂생일 퀴즈쇼</Title>
           </TitleContainer>
           <Btn onClick={() => setPage(1)}>start</Btn>
         </>
