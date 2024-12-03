@@ -63,15 +63,15 @@ function PaperComponents() {
         switch (img) {
             case 'heart':
                 setMsg(introMsg)
-                                setName('오늘의 주인공')
+                                setName('💜')
                 break
             case 'ballon':
                 setMsg(geojeMsg)
-                                setName('땡이🐾')
+                                setName('❤️')
                 break
             case 'gift':
                 setMsg(birthdayMsg)
-                setName('민지')
+                setName('💙')
                 break
 
         }
@@ -96,7 +96,7 @@ function PaperComponents() {
             src={ballon}
             alt='cat'
             width={340}
-            height={450}
+            height={320}
             onClick={() => msgHandler('ballon')}
         />
         <Title>Happy birthday<br/> to <br/>🎂YeongWoo🎂</Title>
