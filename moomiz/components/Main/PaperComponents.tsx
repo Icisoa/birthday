@@ -4,8 +4,8 @@ import Image from "next/image"
 import heart from "@/public/heart.png"
 import ballon from "@/public/cat.png"
 import gift from "@/public/bread.png"
-import geojedo from "@/public/geojedo.heic"
-import choonsik from "@/public/choonsik.heic"
+import geojedo from "@/public/geojedo.png"
+import choonsik from "@/public/choonsik.png"
 import Kumoh from "@/public/photo.jpg"
 import Modal from './Modal'
 import confetti from 'canvas-confetti'
