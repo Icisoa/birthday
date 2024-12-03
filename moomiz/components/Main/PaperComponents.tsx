@@ -2,19 +2,19 @@ import React, { use, useState } from 'react'
 import { styled } from "styled-components"
 import Image from "next/image"
 import heart from "@/public/heart.png"
-import ballon from "@/public/ballon.png"
-import gift from "@/public/gift.png"
-import DDANG from "@/public/DDANG.jpg"
-import Jungsu from "@/public/jungsu.jpg"
+import ballon from "@/public/cat.png"
+import gift from "@/public/bread.png"
+import geojedo from "@/public/geojedo.jpg"
+import choonsik from "@/public/choonsik.jpg"
 import Kumoh from "@/public/photo.jpg"
 import Modal from './Modal'
 import confetti from 'canvas-confetti'
 
 
 function PaperComponents() {
-    const birthdayMsg ='정수야! 오빠!? 생일 축하해🎉💗 물리적인 거리가 너무 멀어서 생일 축하해주고 싶은데 어떻게 해줄까? 고민하다가 나름의 직무(?)를 살려서 편지를 만들어 봤어!! 이런 편지는 처음 받지? ㅎㅎ 시간이 천천히 가는거 같다가도 벌써 11월이 됐다고 생각하니까 너무 빨리 지난거 같아. 요즘은 어때 잘 지내고 있지? 사실 우리 둘 다 직장인이라 반복되는 삶을 살아가고 있어서 재밌는 이야기 하는 것도 어렵고 둘 다 힘든 이야기는 잘 안하려고 해서 대화가 깊진 않지만! 일기로 보는 일상이나 근황 보면 그래도 정수의, 오빠의 존재가 있어서 외롭진 않고 즐겁다? 사실 오빠의 근본적인 고민을 내가 해결해줄 수 없는게 아쉽긴 하지만, 성장해가는 과정에 지켜볼 수 있고 함께 할 수 있는 사람이 있어서 든든한거 같아. 퀴즈 만들면서 갤러리 다시 보고, 이력서도 참고해서 만들었어!  일상에 색 다른 이벤트로 느껴줬으면 좋겠다. 거리는 멀리 있지만 내가 생일 너무너무 축하하구 나중에 만났을 때 한번 더 축하하자 근무 화이팅 하구 생일 잘 보내💗🎂'
-    const ddangMsg = '정수 오빠 생일 축하해 멍🐶'
-    const introMsg = '내가 좋아하는 따봉 정수 사진이야😘'
+    const birthdayMsg = '안녕하심까 고양이씨… 권주임 권작가 아기새 어쩌구… 입니다. 퀴즈 풀 때 이게 뭔가 싶었나여? 제가 개발자 친구와 지피티의 조력을 통해 만들어낸 페이지입니다. 솔직히 퀴즈 풀때 이거 내가 어케앎? 하면서 푼거 있다 없다? 맨 앞으로 돌아가서 솔직히 열받았다 아니다? 정답보고 살짝 어리둥절하길 원했는데 어떨지 모르겠네여 ㅎ.ㅎ. 근데 질문 만들기 솔직히 힘들었음. 나 아직 김영우 그렇게 까진 잘 모르나바여… 더 많이 알려줘라… 무튼 생일날 못 만날 수도 있을 것 같아서 이거 만들어주면 그래도 좋을 것 같아가지고 하려고 했는데 다행히 만나게 되었네여 넘신난당. 생일 제가 젤 먼저 그리고 제일 축하함 진짜임 ~~~ 👽 매일같이 보다가 못보니까 넘 힘드네예… 이것도 몇시간 안남았다 ! 어쩔 수 없이 한정된 시간이지만 알차게 놀아봐여 빨리 다 나아서 놀이공원도 가고 ! 소고기도 묵고 ! 합시다. 생일축하해🐈'
+    const geojeMsg = '삼각대들고 또 사진찍으러 가자구. 인생네컷도 같이 찍어줘라!'
+    const introMsg = '귀여운 춘식이와 김춘식이'
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
@@ -63,11 +63,11 @@ function PaperComponents() {
         switch (img) {
             case 'heart':
                 setMsg(introMsg)
-                setName('오늘의 주인공')
+                                setName('오늘의 주인공')
                 break
             case 'ballon':
-                setMsg(ddangMsg)
-                setName('땡이🐾')
+                setMsg(geojeMsg)
+                                setName('땡이🐾')
                 break
             case 'gift':
                 setMsg(birthdayMsg)
@@ -79,9 +79,9 @@ function PaperComponents() {
 
     return (<Wrapper>
         <Modal isOpen={isModalOpen} onClose={closeModal} name={name}>
-            {name =='땡이🐾'&& <Image className='땡이' src={DDANG} alt='ddang' width={280} height={500}/>}
-            {name =='민지'&& <Image className='민지' src={Kumoh} alt='ddang' width={280} height={500}/>}
-            {name =='오늘의 주인공'&& <Image className='오늘의 주인공' src={Jungsu} alt='ddang' width={280} height={500}/>}
+            {name =='땡이🐾'&& <Image className='땡이' src={geojedo} alt='ddang' width={280} height={500}/>}
+            {name =='민지'&& <Image className='민지' alt='ddang' width={280} height={500}/>}
+            {name =='오늘의 주인공'&& <Image className='오늘의 주인공' src={choonsik} alt='ddang' width={280} height={500}/>}
             {msg}
         </Modal>
         <Image
@@ -91,48 +91,23 @@ function PaperComponents() {
             width={240}
             height={234}
             onClick={() => msgHandler('heart')}
-        />
-        {/* <Image
-            className='star'
-            src={star}
-            alt='별'
-            width={240}
-            height={234}
-            onClick={() => msgHandler('star')}
-        /> */}
         <Image
             className='ballon'
-            src={ballon}
-            alt='ballon'
+            src={cat}
+            alt='cat'
             width={340}
             height={450}
             onClick={() => msgHandler('ballon')}
         />
-        <Title>Happy birthday<br/> to <br/>🎉Jungsu🎂</Title>
-        {/* <Image
-            className='cloud'
-            src={cloud}
-            alt='구름'
-            width={240}
-            height={234}
-            onClick={() => msgHandler('cloud')}
-        /> */}
+        <Title>Happy birthday<br/> to <br/>🎂YeongWoo🎂</Title>
         <Image
             className='gift'
-            src={gift}
-            alt='gift'
+            src={bread}
+            alt='bread'
             width={240}
             height={234}
             onClick={() => msgHandler('gift')}
         />
-        {/* <Image
-            className='clover'
-            src={clover}
-            alt='클로버'
-            width={240}
-            height={234}
-            onClick={() => msgHandler('clover')}
-        /> */}
     </Wrapper>
     )
 }
