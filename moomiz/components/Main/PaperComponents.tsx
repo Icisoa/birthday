@@ -80,7 +80,6 @@ function PaperComponents() {
     return (<Wrapper>
         <Modal isOpen={isModalOpen} onClose={closeModal} name={name}>
             {name =='땡이🐾'&& <Image className='땡이' src={geojedo} alt='ddang' width={280} height={500}/>}
-            {name =='민지'&& <Image className='민지' alt='ddang' width={280} height={500}/>}
             {name =='오늘의 주인공'&& <Image className='오늘의 주인공' src={choonsik} alt='ddang' width={280} height={500}/>}
             {msg}
         </Modal>
