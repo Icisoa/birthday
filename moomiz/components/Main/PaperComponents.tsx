@@ -58,7 +58,7 @@ function PaperComponents() {
     }());
 
 
-    const msgHandler = (img: string) => {
+    {/* const msgHandler = (img: string) => {
         setIsModalOpen(true)
         switch (img) {
             case 'heart':
@@ -75,14 +75,9 @@ function PaperComponents() {
                 break
 
         }
-    }
+    } */}
 
     return (<Wrapper>
-        <Modal isOpen={isModalOpen} onClose={closeModal} name={name}>
-            {name =='땡이🐾'&& <Image className='땡이' src={DDANG} alt='ddang' width={280} height={500}/>}
-            {name =='민지'&& <Image className='민지' src={Kumoh} alt='ddang' width={280} height={500}/>}
-            {name =='오늘의 주인공'&& <Image className='오늘의 주인공' src={Jungsu} alt='ddang' width={280} height={500}/>}
-            {msg}
         </Modal>
         <Image
             className='heart'
@@ -108,7 +103,7 @@ function PaperComponents() {
             height={450}
             onClick={() => msgHandler('ballon')}
         />
-        <Title>Happy birthday<br/> to <br/>🎉Jungsu🎂</Title>
+        <Title>Happy birthday<br/> to <br/>🎂YeongWoo🎂</Title>
         {/* <Image
             className='cloud'
             src={cloud}
